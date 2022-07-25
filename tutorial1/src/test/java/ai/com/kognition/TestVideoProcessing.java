@@ -8,6 +8,8 @@ import ai.kognition.pilecv4j.image.CvMat;
 import ai.kognition.pilecv4j.image.display.ImageDisplay;
 
 public class TestVideoProcessing {
+	
+	public static final String TEST_VIDEO = "/tmp/test-video.mp4";
 
     @Test
     public void testSimpleVideoDisplay() throws Exception {
@@ -26,7 +28,7 @@ public class TestVideoProcessing {
 
                 // create a media data source for the StreamContext. In this case the source
                 // of media data will be our file.
-                .createMediaDataSource("file:///tmp/test-video.mp4")
+                .createMediaDataSource(TEST_VIDEO)
 
                 // We need to open a processing chain. A processing chain is a
                 // grouping of a stream selector, with a series of media stream
